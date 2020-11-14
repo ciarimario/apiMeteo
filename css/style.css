@@ -1,6 +1,32 @@
+*, :before,:after {
+    box-sizing: border-box;
+}
+
+body {
+    margin:0;
+    padding:0;
+    font-family: 'Poppins', sans-serif;
+}
+.container {
+    height:100vh;
+    width:100%;
+    background-size: cover;
+    background:url('../img/tim-stief-YFFGkE3y4F8-unsplash.jpg');
+    
+}
+
+main {
+    height:100vh;
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 #btn-submit {
     border:none;
-    background: rgb(9, 54, 75);
+    background: rgb(9, 54, 75,0.8);
     padding:1rem;
     color:rgb(243, 243, 243);
     border-radius: 1rem;
@@ -9,15 +35,54 @@
 }
 
 #btn-submit:hover {
-    background: rosybrown;
-    color:black;
+    background: rgb(9, 54, 75,1);
+    color:#fff;
 }
 
 #city {
     border:none;
-    background: #ccc;
+    background: rgba(22,22,22,0.5);
     padding:1rem;
-    color:rgb(68, 66, 66);
+    color:rgb(255, 255, 255);
     border-radius: 1rem;
     outline: none;
+}
+::placeholder {
+    color:#fff
+}
+
+#content {
+    width:500px;
+    height:500px;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    color:#fff;
+    margin-top:2rem;
+    box-shadow: 10px 10px 15px rgba(0,0,0,0.3);
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.3);
+}
+#content * {
+    
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    
+    
+}
+
+#div-city {
+    background:rgb(15, 206, 206,0.7);
+    
+}
+#div-sky {
+    background:rgb(98, 104, 104,0.7);
+    text-align:center
+    
+}
+#div-country {
+    background:rgb(170, 42, 159,0.7);
+}
+#div-temp {
+    background:rgb(30, 187, 101,0.7);
 }
